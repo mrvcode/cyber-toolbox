@@ -63,8 +63,8 @@ Este proyecto nace con tres objetivos fundamentales:
 -------------------------------------------------------------------------------
 
 # 1. Clonar el repositorio
-$ git clone https://github.com/mrvcode/security-toolkit.git
-$ cd security-toolkit
+$ git clone https://github.com/mrvcode/cyber-toolbox.git
+$ cd cyber-toolbox
 
 # 2. Dar permisos a un script (ejemplo)
 $ chmod +x scripts/bash/nombre_script.sh
