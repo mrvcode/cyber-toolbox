@@ -1,0 +1,34 @@
+# Logs y temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Entornos virtuales y caché
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+
+# Archivos sensibles
+.env
+*.key
+*.pem
+*.secret
+config.local.*
+
+# Resultados de tests
+results/
+*.tsv
+*.csv
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Documentos personales (opcional)
+private/
+notas-personales.md
