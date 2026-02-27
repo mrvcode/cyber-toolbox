@@ -1,13 +1,21 @@
 *******************************************************************************
 * *
-* ███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗            *
-* ██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝            *
-* ███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝             *
-* ╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝              *
-* ███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║               *
-* ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝               *
+*  ██████╗██╗   ██╗██████╗ ███████╗██████╗                                   *
+* ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗                                  *
+* ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝                                  *
+* ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗                                  *
+* ╚██████╗   ██║   ██████╔╝███████╗██║  ██║                                  *
+*  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝                                  *
 * *
-* - by mrvcode -                                                            *
+* ████████╗ ██████╗  ██████╗ ██╗     ██████╗  ██████╗ ██╗  ██╗               *
+* ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔══██╗██╔═══██╗╚██╗██╔╝               *
+*    ██║   ██║   ██║██║   ██║██║     ██████╔╝██║   ██║ ╚███╔╝                *
+*    ██║   ██║   ██║██║   ██║██║     ██╔══██╗██║   ██║ ██╔██╗                *
+*    ██║   ╚██████╔╝╚██████╔╝███████╗██████╔╝╚██████╔╝██╔╝ ██╗               *
+*    ╚═╝    ╚═════╝ ╚═════╝ ╚══════╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝                *
+* *
+* - by mrvcode -                                       *
+* *
 *******************************************************************************
 
 ===============================================================================
@@ -17,61 +25,61 @@
 -------------------------------------------------------------------------------
 *** POR QUÉ ESTE REPOSITORIO ES PÚBLICO ***
 -------------------------------------------------------------------------------
-Este proyecto nace con tres objetivos fundamentales:
 
-1. [Aprendizaje personal] -> Centralizar scripts y apuntes de mi formación
-                             en ciberseguridad y TI.
-2. [Compartir conocimiento] -> Que otros puedan aprender, modificar y 
-                                mejorar estas herramientas de forma abierta.
-3. [Acceso multi-dispositivo] -> Disponibilidad total de scripts mediante
-                                  sincronización y versionado con Git.
+1. [Aprendizaje personal] -> Scripts y apuntes de ciberseguridad y TI.
+2. [Compartir conocimiento] -> Herramientas abiertas para mejora comunitaria.
+3. [Acceso multi-dispositivo] -> Sincronización y versionado con Git.
 
 -------------------------------------------------------------------------------
 *** QUÉ ENCONTRARÁS AQUÍ ***
 -------------------------------------------------------------------------------
-* Scripts prácticos: Herramientas en Bash, Python y otros lenguajes para 
-  testing, automatización y análisis.
-* Documentación detallada: Cada herramienta incluye su .md con:
-    > Para qué sirve y cómo funciona.
-    > Parámetros y flags disponibles.
-    > Ejemplos reales de uso.
-* Sitios seguros: Recomendaciones para practicar legalmente.
-* Notas y referencias: Cheatsheets y comandos útiles (buenas prácticas).
+
+* Scripts prácticos: Herramientas en Bash, Python y PowerShell.
+* Documentación: Cada script incluye su .md con uso y ejemplos.
+* Recursos: Sitios seguros para practicar y cheatsheets útiles.
 
 -------------------------------------------------------------------------------
 *** RESPONSABILIDAD Y USO ÉTICO ***
 -------------------------------------------------------------------------------
 
-[✔] USO LEGÍTIMO:
-    - Entornos controlados (VMs propias, laboratorios locales).
-    - Servicios con autorización explícita POR ESCRITO.
-    - Aprendizaje académico y formación ética.
+[✔] PERMITIDO: VMs propias, labs locales, auditorías autorizadas por escrito.
+[✘] PROHIBIDO: Atacar sistemas ajenos, actividades ilegales o maliciosas.
 
-[✘] PROHIBIDO:
-    - Atacar sistemas ajenos sin permiso.
-    - Realizar tests en infraestructuras que no te pertenezcan.
-    - Cualquier actividad ilegal o maliciosa.
-
-[!] IMPORTANTE:
-    - Cada usuario es responsable de sus acciones.
-    - El autor (mrvcode) NO se hace responsable de daños o consecuencias legales.
-    - El uso no autorizado es ILEGAL. Conoce tus leyes locales.
-    - ANTE LA DUDA, NO LO HAGAS.
+[!] IMPORTANTE: No me hago responsable del mal uso de estas herramientas.
+    El uso no autorizado es ILEGAL. Si dudas, NO LO HAGAS.
 
 -------------------------------------------------------------------------------
 *** INSTALACIÓN Y USO RÁPIDO ***
 -------------------------------------------------------------------------------
 
-# 1. Clonar el repositorio
+# Clonar el repositorio
 $ git clone https://github.com/mrvcode/cyber-toolbox.git
 $ cd cyber-toolbox
 
-# 2. Dar permisos a un script (ejemplo)
-$ chmod +x scripts/bash/nombre_script.sh
+# Dar permisos y ejecutar (ejemplo)
+$ chmod +x scripts/bash/ejemplo.sh
+$ ./scripts/bash/ejemplo.sh
 
-# 3. Ejecutar
-$ ./scripts/bash/nombre_script.sh [parametros]
+-------------------------------------------------------------------------------
+*** ESTRUCTURA DEL PROYECTO ***
+-------------------------------------------------------------------------------
+
+cyber-toolbox/
+├── README.md              # Este archivo
+├── scripts/
+│   ├── bash/              # Automatización Linux
+│   ├── python/            # Pentesting y Análisis
+│   └── powershell/        # Windows Security
+└── notes/
+    └── cheatsheets/       # Referencias rápidas
+
+-------------------------------------------------------------------------------
+*** CONTACTO ***
+-------------------------------------------------------------------------------
+
+* Autor: mrvcode
+* Repo: https://github.com/mrvcode/cyber-toolbox
 
 *******************************************************************************
-* "Con gran poder, viene una gran responsabilidad... y mucho café"           *
+* "Con gran poder, viene una gran responsabilidad... y mucho café" ☕        *
 *******************************************************************************
