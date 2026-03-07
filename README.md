@@ -70,9 +70,9 @@ $ ./scripts/bash/ejemplo.sh
 cyber-toolbox/
 ├── README.md              # Este archivo
 ├── scripts/
-│   ├── bash/              # Automatización Linux
-│   ├── python/            # Pentesting y Análisis
-│   └── powershell/        # Windows Security
+│   ├── bash/
+|   |── ps1/ 
+│ 
 └── notes/
     └── cheatsheets/       # Referencias rápidas
 
