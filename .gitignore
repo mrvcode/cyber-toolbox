@@ -32,3 +32,68 @@ results/
 # Documentos personales (opcional)
 private/
 notas-personales.md
+### --- 1. SEGURIDAD Y SECRETOS (CRÍTICO) ---
+# Nunca subir estos archivos; contienen contraseñas o llaves
+.env
+.env.*
+*.key
+*.pem
+*.secret
+config.local.*
+auth.json
+secrets.json
+
+### --- 2. PYTHON Y ENTORNOS ---
+# Archivos generados por Python y entornos virtuales
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+.tox/
+.coverage
+.cache
+*.db
+*.sqlite3
+
+### --- 3. LOGS, TEMPORALES Y SCRIPTS ---
+# Archivos que se crean al ejecutar scripts (.sh o .py)
+*.log
+*.tmp
+*.err
+*.out
+tmp/
+temp/
+# Archivos de intercambio de editores (Nano/Vim/VS Code)
+*.swp
+*.swo
+*~
+tempCodeRunnerFile.py
+
+### --- 4. DATOS Y RESULTADOS (De tu lista) ---
+# Evita subir bases de datos pesadas o resultados de tests
+results/
+private/
+notas-personales.md
+*.tsv
+*.csv
+
+### --- 5. WEB / JAVASCRIPT ---
+# Por si instalas alguna herramienta de node en el futuro
+node_modules/
+.npm
+package-lock.json
+
+### --- 6. SISTEMA Y EDITORES (WSL2 / Windows / Mac) ---
+# Basura que crea Windows al acceder desde el explorador
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+# Basura de Mac (si compartes archivos con alguien que use Mac)
+.DS_Store
+# Configuración de editores
+.vscode/
+.idea/
