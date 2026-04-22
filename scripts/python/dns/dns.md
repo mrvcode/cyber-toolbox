@@ -56,7 +56,7 @@ crear subdomains.txt con lista de subdominios (uno por línea)
 Estructura del proyecto:
 
 scripts/python/dns/
-├── dns_recon.py         # Script principal
+├── dns_recon.py       # Script principal
 └── subdomains.txt     # Lista de subdominios a probar
 
 
@@ -219,12 +219,12 @@ for ip, subdomains in resultados.items():
 
 ===============================================================================
 
-Dominio					Propósito						Notas
+Dominio              Propósito             Notas
 
-google.com				Demostración				Público, gran infraestructura
-example.com				Documentación				Solo DNS básico, pocos subdominios
-github.com				Práctica							Subdominios como api.github.com
-scanme.nmap.org		Escaneo autorizado		Propiedad de Nmap.org
+google.com           Demostración          Público, gran infraestructura
+example.com          Documentación         Solo DNS básico, pocos subdominios
+github.com           Práctica              Subdominios como api.github.com
+scanme.nmap.org      Escaneo autorizado    Propiedad de Nmap.org
 
 ⚠️ ADVERTENCIA: No uses esta técnica contra dominios sin autorización por escrito. La enumeración de subdominios es considerada reconocimiento proactivo y puede violar términos de servicio.
 
@@ -262,11 +262,11 @@ Otro ejemplo:
 
 ===============================================================================
 
-Error													Causa										Solución
-No module named 'dns'							dnspython no instalado				pip install dnspython
-FileNotFoundError: subdomains.txt			Archivo no existe						Crear archivo con lista de subdominios
-socket.herror											Reverse DNS no configurado		Normal, muchos servidores no tienen PTR
-Timeout												DNS lento o bloqueado				Probar con dns.resolver.resolve(hostname, lifetime=5)
+Error                                Causa                         Solución
+No module named 'dns'                dnspython no instalado        pip install dnspython
+FileNotFoundError: subdomains.txt    Archivo no existe             Crear archivo con lista de subdominios
+socket.herror                        Reverse DNS no configurado    Normal, muchos servidores no tienen PTR
+Timeout                              DNS lento o bloqueado         Probar con dns.resolver.resolve(hostname, lifetime=5)
 
 
 ===============================================================================
