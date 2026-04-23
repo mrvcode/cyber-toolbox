@@ -48,7 +48,6 @@ Este script es una herramienta de reconocimiento avanzado que implementa técnic
 
 Es necesario contar con Python 3 y privilegios de administrador para la manipulación de paquetes.
 
-```bash
 # Actualizar e instalar dependencias
 sudo pip3 install scapy requests urllib3
 
