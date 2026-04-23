@@ -147,15 +147,15 @@ Error en búsqueda: 401 Unauthorized
 ¿Por qué ocurre?
 
 La API gratuita de Shodan NO permite el método api.search()
-sin un plan de pago (mínimo $49/mes para el plan "Developer").
+sin un plan de pago.
 
 ¿Qué funciona en versión gratuita?
 
-Funcionalidad			Gratis		Pago
-api.host(IP) - Host Lookup	✅ Sí		✅ Sí
-api.search(query) - Búsqueda	❌ No		✅ Sí
-Límite de resultados		1 IP/consulta	Ilimitado
-Consultas por mes		Ilimitadas	Ilimitadas
+Funcionalidad                   Gratis          Pago
+api.host(IP) - Host Lookup      ✅ Sí           ✅ Sí
+api.search(query) - Búsqueda    ❌ No           ✅ Sí
+Límite de resultados            1 IP/consulta   Ilimitado
+Consultas por mes               Ilimitadas      Ilimitadas
 
 
 Solución:
@@ -174,11 +174,12 @@ Para búsquedas masivas, actualiza a plan de pago o usa la web de Shodan manualm
 
 IPs de prueba (propiedad de empresas que permiten escaneo):
 
-IP			Propietario		Servicios típicos
-45.33.32.156		Linode (test box)	HTTP, SSH, NTP
-8.8.8.8			Google DNS		DNS (puerto 53)
-1.1.1.1			Cloudflare DNS		DNS (puerto 53)
-185.199.108.153		GitHub Pages		HTTPS (443)
+IP                 Propietario             Servicios típicos
+
+45.33.32.156       Linode(test box)        HTTP, SSH, NTP
+8.8.8.8            Google DNS              DNS (puerto 53)
+1.1.1.1            Cloudflare DNS          DNS (puerto 53)
+185.199.108.153    GitHub Pages            HTTPS (443)
 
 Servicios de prueba de Shodan:
 
@@ -202,22 +203,26 @@ Modo 2 - Host Lookup (funciona en versión gratuita):
 # Analizar un servidor de pruebas
 IP: 45.33.32.156
 
+
 # Analizar tu propio servidor (si tienes uno expuesto)
 IP: <tu_ip_publica>
+
 
 # Analizar DNS de Google
 IP: 8.8.8.8
 Modo 1 - Search (SOLO con plan de pago):
 
+
 # Búsqueda de servidores Apache en España
 query = "apache country:ES"
+
 
 # Búsqueda de puerto SSH abierto en red de Google
 query = "port:22 org:Google"
 
+
 # Búsqueda de cámaras con autenticación débil
 query = "webcam login"
-
 
 
 
@@ -229,9 +234,10 @@ query = "webcam login"
 
 Ejemplo de output exitoso:
 
-text
 --- Puerto: 80 (Apache httpd) ---
-      [!] VULNERABILIDADES DETECTADAS: CVE-2014-0117, CVE-2017-7679...
+
+[!] VULNERABILIDADES DETECTADAS: CVE-2014-0117, CVE-2017-7679...
+
 ¿Qué significa?
 
 Puerto 80 abierto → Servicio web HTTP expuesto
@@ -256,11 +262,11 @@ Restringir acceso al puerto si no es necesario
 
 ===============================================================================
 
-Error				Causa				Solución
-401 Unauthorized (búsqueda)	API gratuita sin permisos	Usa solo opción 2 o actualiza plan
-API key inválida		Key incorrecta o revocada	Regenera key en Shodan dashboard
-No se encontraron datos		IP no indexada por Shodan	Prueba otra IP o espera 24h
-Connection timeout		Problemas de red		Verifica conexión a internet
+Error                           Causa                           Solución
+401 Unauthorized (búsqueda)     API gratuita sin permisos       Usa solo opción 2 o actualiza plan
+API key inválida                Key incorrecta o revocada       Regenera key en Shodan dashboard
+No se encontraron datos         IP no indexada por Shodan       Prueba otra IP o espera 24h
+Connection timeout              Problemas de red                Verifica conexión a internet
 
 
 
@@ -272,7 +278,6 @@ Connection timeout		Problemas de red		Verifica conexión a internet
 
 🚨 ILEGAL Y PROHIBIDO:
 
-text
 ❌ Escanear IPs sin autorización por escrito
 ❌ Usar resultados para ataques activos
 ❌ Automatizar consultas masivas contra la API gratuita (viola ToS)
@@ -281,12 +286,12 @@ text
 
 ✅ LEGAL Y PERMITIDO:
 
-text
 ✓ Escanear tus propias IPs o servidores
 ✓ Usar IPs de prueba documentadas (scanme.nmap.org)
 ✓ Realizar auditorías con permiso explícito de cliente
 ✓ Fines educativos en entorno controlado
 ✓ Reportar vulnerabilidades a programas de bug bounty
+
 Shodan Terms of Service:
 
 La versión gratuita es para uso personal/no comercial
@@ -346,9 +351,13 @@ Configura tu propio VPS y analízalo con Shodan
 Mejora del script (propuesta):
 
 # Añadir verificación de tipo de cuenta antes de búsqueda
+
 if opcion == "1":
+
     print("[!] La búsqueda masiva requiere plan de pago de Shodan")
+
     print("    Usa la opción 2 (Host Lookup) con cuenta gratuita")
+
     return
 
 Script creado para entornos educativos y auditorías autorizadas.
