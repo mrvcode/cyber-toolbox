@@ -1,4 +1,3 @@
-markdown
 🔍 SHODAN TOOL - BÚSQUEDA DE VULNERABILIDADES Y EXPOSICIÓN DE SERVICIOS
 
 ===============================================================================
@@ -6,6 +5,8 @@ markdown
 Nivel: 🟡 Intermedio
 Categoría: OSINT / Cybersecurity / Vulnerability Assessment
 Herramienta: Shodan API (Python)
+
+
 
 ===============================================================================
 
@@ -22,6 +23,8 @@ El script se autentica con tu API Key, realiza la consulta y presenta los
 resultados de forma estructurada, destacando especialmente los CVEs 
 detectados en cada puerto abierto.
 
+
+
 ===============================================================================
 
 🎯 ¿PARA QUE SIRVE?
@@ -33,6 +36,8 @@ detectados en cada puerto abierto.
 - **Gestión de vulnerabilidades**: Identificar rápidamente servicios vulnerables
 - **Aprendizaje**: Entender cómo Shodan cataloga y expone información de dispositivos
 
+
+
 ===============================================================================
 
 📦 REQUISITOS
@@ -41,11 +46,9 @@ detectados en cada puerto abierto.
 
 Instalar la librería de Shodan:
 
-```bash
 pip install shodan
 Verificar instalación:
 
-bash
 python -c "import shodan; print(shodan.__version__)"
 API Key requerida:
 
@@ -54,6 +57,8 @@ Regístrate en: https://account.shodan.io/register
 Obtén tu API Key en: https://account.shodan.io/
 
 La versión gratuita tiene limitaciones (explicadas abajo)
+
+
 
 ===============================================================================
 
@@ -70,6 +75,8 @@ Estructura del proyecto:
 scripts/python/shodan/
 ├── shodan_tool.py       # Script principal
 └── shodan_utils.py      # Funciones de conexión a Shodan API
+
+
 Ejemplo de ejecución completa:
 
 === HERRAMIENTA AUTOMATIZADA DE SHODAN ===
@@ -91,6 +98,8 @@ Selecciona una opción (1 o 2): 2
 --- Puerto: 80 (Apache httpd) ---
       [!] VULNERABILIDADES DETECTADAS: CVE-2014-0117, CVE-2017-7679, 
       CVE-2017-9798, CVE-2015-3185, CVE-2025-58098, CVE-2015-3183...
+
+
 ===============================================================================
 
 ⚙️ FUNCIONAMIENTO INTERNO
@@ -123,6 +132,8 @@ Escanea todos los puertos de la IP
 
 Extrae vulnerabilidades CVE asociadas a cada servicio
 
+
+
 ===============================================================================
 
 ⚠️ LIMITACIONES DE LA VERSIÓN GRATUITA (IMPORTANTE)
@@ -146,11 +157,14 @@ api.search(query) - Búsqueda	❌ No		✅ Sí
 Límite de resultados		1 IP/consulta	Ilimitado
 Consultas por mes		Ilimitadas	Ilimitadas
 
+
 Solución:
 
 Usa solo la opción 2 (Host Lookup) con cuenta gratuita
 
 Para búsquedas masivas, actualiza a plan de pago o usa la web de Shodan manualmente
+
+
 
 ===============================================================================
 
@@ -172,7 +186,10 @@ scanme.nmap.org (45.33.32.156) - Diseñado para pruebas de escaneo
 
 test.shodan.io - Servidor oficial de pruebas de Shodan
 
+
 ⚠️ NUNCA escanees IPs sin autorización explícita por escrito.
+
+
 
 ===============================================================================
 
@@ -201,6 +218,9 @@ query = "port:22 org:Google"
 # Búsqueda de cámaras con autenticación débil
 query = "webcam login"
 
+
+
+
 ===============================================================================
 
 📊 INTERPRETANDO LOS RESULTADOS
@@ -228,6 +248,8 @@ Actualizar el software vulnerable
 
 Restringir acceso al puerto si no es necesario
 
+
+
 ===============================================================================
 
 🔧 POSIBLES ERRORES Y SOLUCIONES
@@ -239,6 +261,8 @@ Error				Causa				Solución
 API key inválida		Key incorrecta o revocada	Regenera key en Shodan dashboard
 No se encontraron datos		IP no indexada por Shodan	Prueba otra IP o espera 24h
 Connection timeout		Problemas de red		Verifica conexión a internet
+
+
 
 ===============================================================================
 
@@ -271,6 +295,8 @@ Prohibido hacer scraping automatizado
 
 Límite de requests: no especificado, pero abusar = baneo de IP
 
+
+
 ===============================================================================
 
 📚 RECURSOS ADICIONALES
@@ -296,6 +322,8 @@ Libros recomendados:
 "OSINT Techniques" - Michael Bazzell
 
 "The Shodan Bible" - John Matherly (creador de Shodan)
+
+
 
 ===============================================================================
 
