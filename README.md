@@ -71,7 +71,8 @@ cyber-toolbox/
 ├── README.md              # Este archivo
 ├── scripts/
 │   ├── bash/
-|   |── ps1/ 
+|   |── ps1/
+|   |── python/ 
 │ 
 └── notes/
     └── cheatsheets/       # Referencias rápidas
