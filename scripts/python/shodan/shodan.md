@@ -200,31 +200,24 @@ test.shodan.io - Servidor oficial de pruebas de Shodan
 
 Modo 2 - Host Lookup (funciona en versión gratuita):
 
-# Analizar un servidor de pruebas
+Analizar un servidor de pruebas
 IP: 45.33.32.156
 
-
-# Analizar tu propio servidor (si tienes uno expuesto)
+Analizar tu propio servidor (si tienes uno expuesto)
 IP: <tu_ip_publica>
 
-
-# Analizar DNS de Google
+Analizar DNS de Google
 IP: 8.8.8.8
 Modo 1 - Search (SOLO con plan de pago):
 
-
-# Búsqueda de servidores Apache en España
+Búsqueda de servidores Apache en España
 query = "apache country:ES"
 
-
-# Búsqueda de puerto SSH abierto en red de Google
+Búsqueda de puerto SSH abierto en red de Google
 query = "port:22 org:Google"
 
-
-# Búsqueda de cámaras con autenticación débil
+Búsqueda de cámaras con autenticación débil
 query = "webcam login"
-
-
 
 ===============================================================================
 
