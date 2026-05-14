@@ -1,7 +1,3 @@
-Aquí se recoge como actúan todos los archivos en un resumen claro que esta también en GitHub:
-
-
-
 Toolkit modular en Python para reconocimiento de redes y análisis de vulnerabilidades. Desarrollado como parte de una ruta de formación práctica en ciberseguridad, con cada módulo mapeado al framework MITRE ATT&CK.
 
 > **Aviso legal:** Este toolkit está destinado a auditorías autorizadas, entornos de laboratorio personal y plataformas legales como Hack The Box o `scanme.nmap.org`. El uso no autorizado contra sistemas de terceros es ilegal bajo la LSSI española, la CFAA estadounidense y leyes equivalentes en otras jurisdicciones.
