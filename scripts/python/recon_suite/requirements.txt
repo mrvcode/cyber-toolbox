@@ -1,0 +1,5 @@
+scapy
+requests
+urllib3
+dnspython
+shodan
